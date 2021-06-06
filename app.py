@@ -8,7 +8,7 @@ config = tf.compat.v1.ConfigProto()
 config.gpu_options.per_process_gpu_memory_fraction = 0.4
 session = tf.compat.v1.Session(config=config)
 
-st.markdown("""##Neural Networks for mineral prediction in XPL thin section""")
+st.title("Neural Networks for mineral prediction in XPL thin sections")
 
 st.markdown("Works with: Olivine, Plagioclase, Pyroxene, Alkali Feldspar, Biotite Muscovite, Hornblende and Quartz")
 
