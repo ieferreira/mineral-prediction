@@ -1,8 +1,0 @@
-0 alkali_feldspar
-1 biotite
-2 hornblende
-3 muscovite
-4 olivine
-5 plagioclase
-6 pyroxene
-7 quartz
