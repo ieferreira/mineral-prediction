@@ -1,7 +1,12 @@
 import streamlit as st
 from helper import *
 import tensorflow.keras
+import tensorflow as tf
 from PIL import Image, ImageOps
+
+config = tf.compat.v1.ConfigProto()
+config.gpu_options.per_process_gpu_memory_fraction = 0.4
+session = tf.compat.v1.Session(config=config)
 
 st.title("Neural Networks for mineral prediction in XPL thin sections")
 
@@ -10,7 +15,6 @@ co1, co2, co3 = st.beta_columns([1, 1, 1])
 co2.write(" Works with: ")
 
 st.write("Olivine | Plagioclase | Pyroxene | Alkali Feldspar | Biotite | Muscovite | Hornblende | Quartz")
-
 
 
 file = st.file_uploader("", type=["jpg"])
